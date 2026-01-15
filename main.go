@@ -3,10 +3,12 @@ package main
 import (
 	"log"
 
+	"gostudy/web_study/github.com-gin-gonic-gin"
+
 	mydb "gostudy/db_study/modernc.org-sqlite"
 )
 
-func main() {
+func mydbtest() {
 	db, err := mydb.Connect()
 	if err != nil {
 		log.Fatalf("connect: %v", err)
@@ -22,4 +24,11 @@ func main() {
 	if err != nil {
 		return
 	}
+}
+
+func mygintest() {
+	github_com_gin_gonic_gin.Controller()
+}
+func main() {
+	mygintest()
 }
