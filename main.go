@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 
+	github_com_golang_jwt_jwt "gostudy/jwt_study/github.com-golang-jwt-jwt"
 	"gostudy/web_study/github.com-gin-gonic-gin"
 
 	mydb "gostudy/db_study/modernc.org-sqlite"
@@ -30,5 +31,5 @@ func mygintest() {
 	github_com_gin_gonic_gin.Controller()
 }
 func main() {
-	mygintest()
+	github_com_golang_jwt_jwt.TokenTest()
 }
